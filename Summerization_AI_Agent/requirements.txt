@@ -1,0 +1,32 @@
+# Web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Config & validation
+pydantic==2.8.2
+pydantic-settings==2.4.0
+
+# Database
+asyncpg==0.29.0
+
+# LLM providers
+google-cloud-aiplatform==1.65.0
+vertexai==1.65.0
+openai==1.45.0
+
+# Observability
+langfuse==2.36.0
+
+# Auth
+PyJWT==2.9.0
+
+# Logging
+structlog==24.4.0
+
+# Redis
+redis[hiredis]==5.0.8
+
+# gRPC
+grpcio==1.68.0
+grpcio-tools==1.68.0
+grpcio-reflection==1.68.0

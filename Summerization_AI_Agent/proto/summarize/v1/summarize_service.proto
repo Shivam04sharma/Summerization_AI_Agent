@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package oni.summarize.v1;
+
+option java_multiple_files = true;
+option java_package = "com.cap.commandbar.grpc.summarize";
+option java_outer_classname = "SummarizeProto";
+
+service SummarizeService {
+  rpc Summarize (SummarizeRequest) returns (SummarizeResponse);
+}
+
+message SummarizeRequest {
+  string text = 1;
+  string summary_type = 2;
+  string language = 3;
+  string app_id = 4;
+}
+
+message SummarizeResponse {
+  string summary = 1;
+  int32 word_count = 2;
+  string summary_type = 3;
+  string label = 4;
+  string format = 5;
+  string model_used = 6;
+  float confidence_score = 7;
+}
